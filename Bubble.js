@@ -106,7 +106,7 @@ export default class Bubble extends React.Component {
       <View style={[styles.bubble,
         (this.props.position === 'left' ? styles.bubbleLeft : this.props.position === 'right' ? styles.bubbleRight : styles.bubbleCenter),
         (this.props.status === 'ErrorButton' ? styles.bubbleError : null),
-        flexStyle]}
+        flexStyle, this.props.customStyle]}
       >
         {this.props.name}
         {this.renderText(this.props.text, this.props.position)}
